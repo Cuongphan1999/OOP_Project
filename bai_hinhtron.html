@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Circle {
+            constructor(radius, color) {
+                this.radius = radius;
+                this.color = color;
+            }
+        
+            getRadius(){
+                return this.radius;//ban kinh
+            }
+            getArea (){
+                return Math.PI * Math.pow(this.radius, 2);//dientich
+            }
+        }
+        let circle = new Circle(2);
+        let radius = circle.getRadius();
+        let area = circle.getArea();
+        //console.log(circle.getRadius())
+        alert("radius:" + radius + ": area" + area);
+
+    </script>
+</body>
+</html>
